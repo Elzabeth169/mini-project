@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Filter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/filter.css') }}">
+    <style>
+        @font-face {
+        font-family: 'myFirstFont';
+        src:local("{{ url_for('static', filename='Poppins-Regular.ttf') }}");
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('home') }}">
+        <button class="Btn">
+            <img src="{{ url_for('static', filename='img/left-arrow.png') }}" alt="Back Arrow" width="20px" height="20px" class="arrow">
+            Back
+        </button>
+    </a>
+    <div class="body_container">
+        <div class="container">
+            <img src="{{ url_for('static', filename='img/Hardware.svg') }}" alt="Image" width="400px" height="400px">
+            <form class="form" action="{{ url_for('results') }}" method="POST">
+                <label for="Brand">Brand</label>
+                <select id="Brand" name="Brand" class="select">
+                    <option value="" selected disabled hidden>Select Brand</option>
+                    <option value="lenovo"> lenovo</option>
+                    <option value="tecno"> tecno</option>
+                    <option value="hp"> hp</option>
+                    <option value="acer"> acer</option>
+                    <option value="apple"> apple</option>
+                    <option value="infinix"> infinix</option>
+                    <option value="asus"> asus</option>
+                    <option value="dell"> dell</option>
+                    <option value="msi"> msi</option>
+                    <option value="samsung"> samsung</option>
+                </select>
+                <label for="Price">Price Range</label>
+                <select id="Price" name="Price" class="select">
+                    <option value="" selected disabled hidden>Select Price Range</option>
+                    <option value="0-20000"> 0-20000</option>
+                    <option value="20000-400000"> 20000-40000</option>
+                    <option value="40000-60000"> 40000-60000</option>
+                    <option value="60000-80000"> 60000-80000</option>
+                    <option value="80000-100000"> 80000-100000</option>
+                    <option value="100000-400000"> 100000-400000</option>
+                </select>
+                <label for="Processor">Processor</label>
+                <select id="Processor" name="Processor" class="select">
+                    <option value="" selected disabled hidden>Select Processor</option>
+                    <option value="core i3"> core i3</option>
+                    <option value="core i5"> core i5</option>
+                    <option value="core i7"> core i7</option>
+                    <option value="core i9"> core i9</option>
+                    <option value="m1"> m1</option>
+                    <option value="m2"> m2</option>
+                    <option value="m3"> m3</option>
+                    <option value="ryzen 3"> ryzen 3</option>
+                    <option value="ryzen 5"> ryzen 5</option>
+                    <option value="ryzen 7"> ryzen 7</option>
+                    <option value="ryzen 9"> ryzen 9</option>
+                </select>
+                <label for="Ram">Ram capacity</label>
+                <select id="Ram" name="Ram" class="select">
+                    <option value="" selected disabled hidden>Select Ram</option>
+                    <option value="4"> 4</option>
+                    <option value="8"> 8</option>
+                    <option value="16"> 16</option>
+                    <option value="32"> 32</option>
+                </select>
+                <label for="Storage Type">Storage Type</label>
+                <select id="Storage Type" name="Storage Type" class="select">
+                    <option value="" selected disabled hidden>Select Storage Type</option>
+                    <option value="SSD"> SSD</option>
+                    <option value="HDD"> HDD</option>
+                </select>
+                <label for="Rom">Rom </label>
+                <select id="Rom" name="Rom" class="select">
+                    <option value="" selected disabled hidden>Select Rom</option>
+                    <option value="256"> 256</option>
+                    <option value="512"> 512</option>
+                    <option value="1024"> 1024</option>
+                </select>
+                <label for="Graphics Card Brand">Graphics Card Brand </label>
+                <select id="Graphics Card Brand" name="Graphics Card Brand" class="select">
+                    <option value="" selected disabled hidden>Select Graphics Card Brand</option>
+                    <option value="intel"> intel</option>
+                    <option value="nvidia"> nvidia</option>
+                    <option value="amd"> amd</option>
+                    <option value="apple"> apple</option>
+                </select>
+                <label for="Graphics Card Type">Graphics Card Type </label>
+                <select id="Graphics Card Type" name="Graphics Card Type" class="select">
+                    <option value="" selected disabled hidden>Select Graphics Card Type</option>
+                    <option value="integrated"> integrated</option>
+                    <option value="dedicated"> dedicated</option>
+                    <option value="apple"> apple</option>
+                </select>
+                
+                <button type="submit" class="button">Generate</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

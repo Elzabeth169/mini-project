@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO related -->
+    <title>Chatbot</title>
+    <!-- Meta related -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Vendor CSS & Style files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <style>
+        nav {
+            box-shadow: 0 4px 6px 2px rgba(255, 255, 255, 0.2);
+        }
+        .btn-borders {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row padded_row">
+            <!-- Right side content -->
+            <div class="col-md-7">
+                <div class="chat_window">
+                    <div class="top_menu">
+                        <div class="title">ChatBot</div>
+                    </div>
+                    <!-- Dynamically rendered -->
+                    <ul class="messages"></ul>
+                    <!-- Input -->
+                    <div class="bottom_wrapper">
+                        <input id="msg_input" placeholder="Enter a prompt here..." />
+                        <div id="send_button" class="app_button_1">Send</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor script files -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
+
