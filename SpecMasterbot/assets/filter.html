@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Filter</title>
+    <link rel="stylesheet" href="css/filter.css">
+    <style>
+        @font-face {
+        font-family: myFirstFont;
+        src:local("D:\VSC\SpecMaster\SpecMaster\assets\Poppins-Regular.ttf");
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="../input.html">
+        <button class="Btn">
+            <img src="img/left-arrow.png" alt="Back Arrow" width="20px" height="20px" class="arrow">
+            Back
+        </button>
+    </a>
+    <div class="body_container">
+        <div class="container">
+            <img src="img/Hardware.svg" alt="Image" width="400px" height="400px">
+            <form class="form">
+                <label for="Ram">What Ram capacity do you desire?</label>
+                <select id="Ram" name="Ram" class="select">
+                    <option value="" selected disabled hidden>Select Ram</option>
+                    <option value="4 GB DDR4 RAM"> 4 GB DDR4 RAM</option>
+                    <option value="4 GB LPDDR4X RAM"> 4 GB LPDDR4X RAM</option>
+                    <option value="8 GB DDR4 RAM"> 8 GB DDR4 RAM</option>
+                    <option value="8 GB LPDDR4X RAM"> 8 GB LPDDR4X RAM</option>
+                    <option value="16 GB DDR4 RAM"> 16 GB DDR4 RAM</option>
+                    <option value="16 GB DDR5 RAM"> 16 GB DDR5 RAM</option>
+                    <option value="16 GB LPDDR5 RAM"> 16 GB LPDDR5 RAM</option>
+                    <option value="32 GB DDR5 RAM"> 32 GB DDR5 RAM</option>
+                    <option value="32 GB LPDDR5 RAM"> 32 GB LPDDR5 RAM</option>
+                </select>
+                
+                <label for="Rom">Do you have any Rom preferences?</label>
+                <select id="Rom" name="Rom" class="select">
+                    <option value="" selected disabled hidden>Select Rom</option>
+                    <option value="256 GB SSD"> 256 GB SSD</option>
+                    <option value="512 GB SSD"> 512 GB SSD</option>
+                    <option value="1 TB SSD"> 1 TB SSD</option>
+                    <option value="2 TB SSD"> 2 TB SSD</option>
+                    <option value="1 TB HDD"> 1 TB HDD</option>
+                    <option value="1 TB HDD|256 GB SSD"> 1 TB HDD|256 GB SSD</option>
+                </select>
+    
+                <label for="Processor">Which Processor do you desire?</label>
+                <select id="Processor" name="Processor" class="select">
+                    <option value="" selected disabled hidden>Select Processor</option>
+                    <option value="Intel Core i3 Processor (11th Gen)"> Intel Core i3 Processor (11th Gen)</option>
+                    <option value="Intel Core i5 Processor (11th Gen)"> Intel Core i5 Processor (11th Gen)</option>
+                    <option value="Intel Core i5 Processor (12th Gen)"> Intel Core i5 Processor (12th Gen)</option>
+                    <option value="Intel Core i7 Processor (11th Gen)"> Intel Core i7 Processor (11th Gen)</option>
+                    <option value="Intel Core i7 Processor (12th Gen)"> Intel Core i7 Processor (12th Gen)</option>
+                    <option value="Intel Core i9 Processor (12th Gen)"> Intel Core i9 Processor (12th Gen)</option>
+                    <option value="Intel Core i9 Processor (13th Gen)"> Intel Core i9 Processor (13th Gen)</option>
+                    <option value="Apple M1 Processor"> Apple M1 Processor</option>
+                    <option value="Apple M2 Processor"> Apple M2 Processor</option>
+                    <option value="Apple M1 Pro Processor"> Apple M1 Pro Processor</option>
+                    <option value="Apple M2 Pro Processor"> Apple M2 Pro Processor</option>
+                    <option value="Apple M1 Max Processor"> Apple M1 Max Processor</option>
+                    <option value="AMD Athlon Dual Core Processor"> AMD Athlon Dual Core Processor</option>
+                    <option value="AMD Ryzen 3 Quad Core Processor"> AMD Ryzen 3 Quad Core Processor</option>
+                    <option value="AMD Ryzen 3 Dual Core Processor"> AMD Ryzen 3 Dual Core Processor</option>
+                    <option value="AMD Ryzen 5 Quad Core Processor"> AMD Ryzen 5 Quad Core Processor</option>
+                    <option value="AMD Ryzen 5 Hexa Core Processor"> AMD Ryzen 5 Hexa Core Processor</option>
+                    <option value="AMD Ryzen 7 Octa Core Processor"> AMD Ryzen 7 Octa Core Processor</option>
+                    <option value="AMD Ryzen 9 Octa Core Processor"> AMD Ryzen 9 Octa Core Processor</option>
+                </select>
+                
+                
+                <button class="button">Generate</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
